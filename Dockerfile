@@ -41,7 +41,7 @@ FROM alpine
 COPY --from=builder /workspace/livekit-server /livekit-server
 
 # Tambahkan config file
-COPY livekit.yaml /etc/livekit.yaml
+COPY livekit.yaml /livekit.yaml
 
 # Expose port (opsional untuk dokumentasi, tidak wajib di Docker)
 EXPOSE 7880 7881 3478/udp
