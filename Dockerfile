@@ -44,7 +44,7 @@ COPY --from=builder /workspace/livekit-server /livekit-server
 COPY livekit.yaml /livekit.yaml
 
 # Expose port (opsional untuk dokumentasi, tidak wajib di Docker)
-EXPOSE 7880 7881 3478/udp
+EXPOSE 7880 7881 3478/udp 40000-41000/udp 50000-60000/udp
 
 # Jalankan livekit-server dengan config
 ENTRYPOINT ["/livekit-server", "--config", "/livekit.yaml"]
