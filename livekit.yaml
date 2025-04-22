@@ -13,7 +13,7 @@ turn:
   enabled: true
   udp_port: 3478
   relay_range_start: 40000
-  relay_range_end: 50000
+  relay_range_end: 41000
 
 keys:
   devkey: secret
